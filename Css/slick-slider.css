@@ -1,0 +1,131 @@
+.slick-list,
+.slick-slider,
+.slick-track {
+	position: relative;
+	display: block
+}
+
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+	visibility: hidden
+}
+
+.slick-slider {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	user-select: none;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+	overflow: hidden;
+	margin: 0;
+	padding: 0
+}
+
+.slick-list:focus {
+	outline: 0
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+	transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+	top: 0;
+	left: 0
+}
+
+.slick-track:after,
+.slick-track:before {
+	display: table;
+	content: ''
+}
+
+.slick-track:after {
+	clear: both
+}
+
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px
+}
+
+[dir=rtl] .slick-slide {
+	float: right
+}
+
+.slick-slide img {
+	display: block
+}
+
+.slick-slide.slick-loading img {
+	display: none
+}
+
+.slick-slide.dragging img {
+	pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+	display: block
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+	display: none
+}
+/* Dots */
+ul.slick-dots {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.slick-dots li {
+    width: auto;
+    margin: 2px;
+}
+ul.slick-dots li button {
+    height: 12px;
+    width: 12px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+}
+ul.slick-dots li.slick-active button {
+    background: #5d00ff;
+    cursor: auto;
+}
+img.prev-arrow.slick-arrow, img.next-arrow.slick-arrow {
+    transform: translate(10px, -50%);
+    position: absolute;
+    top: 55%;
+    z-index: 9;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    padding: 12px;
+    left: -10px;
+    cursor: pointer;
+}
+img.next-arrow.slick-arrow {
+left: auto;
+right: 10px;
+}

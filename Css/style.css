@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+main{
+    overflow-x: hidden;
+}
+.menu i {
+    color: rgb(252, 235, 138);
+    cursor: pointer;
+}
+.icons i {
+    padding: 0 10px;
+    color: grey;
+}
+.herosection{
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.herosection h2 {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.herosection h5{
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+}
+.inner{
+    border-left: 1px solid rgb(252, 235, 138);
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    /* width: 50%; */
+}
+.inner img {
+    transform: rotate(-45deg) !important;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+.roast{
+    display: inline-block;
+    position: relative;
+    top: 4rem;
+    left: -5rem;
+    color: white;
+    text-align: end;
+    line-height: 1;
+}
+.roast span{
+    color: grey;
+}
+.dark_roast{
+    color: grey;
+    display: inline-block;
+    position: relative;
+    top: 4rem;
+    left: 12rem
+
+}
+.light_roast{
+    color: grey;
+    display: inline-block;
+    position: relative;
+    top: 17rem;
+    left: 6rem
+}
+.decafinated{
+    color: grey;
+    display: inline-block;
+    position: relative;
+    top: 17rem;
+    left: -24rem ;
+}
+.coffeebeans{
+    align-items: center;
+    color: white;
+}
+.coffeebeans mark {
+    color: rgb(252, 235, 138);
+    background-color: transparent;
+}
+
+.coffeeBeanText h2 {
+    font-size:x-large;
+    font-family: 'EB Garamond', serif;
+}
+.coffeebeans h5{
+    color: rgb(252, 235, 138);
+    font-weight: 200;
+    font-family: 'EB Garamond', serif;
+}
+.coffeebeans span{
+    color: grey;
+    font-size: smaller;
+}
+.coffeebeans button{
+    background-color: #333;
+    outline: none;
+    color: white;
+    border: 1px solid #757474;
+    padding: 5px 15px;
+}
+.coffeeBeanText{
+    align-items: center;
+    margin: auto 0;
+    text-align: start;
+    /* display: inline-block; */
+     /* margin-top: 6rem */
+}
+
+
+
+.line{
+    height: 20px;
+    width: 3px !important;
+    color: rgb(252, 235, 138);
+    background-color: rgb(252, 235, 138);
+    margin: 0 auto;
+}
+/* .upper-comma{
+    color: white;
+    margin: 0 auto;
+    height: 1px;
+    width: 1px;
+} */
+.button_text{
+    padding: 10px 250px;
+    margin: 0 auto;
+}
+.button_text .aboutCoffee{
+    color: grey;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.button_text .aboutCoffee mark {
+    color: white;
+    background-color: transparent;
+}
+.textButton{
+    background-color: rgb(252, 235, 138);
+    color: rgb(184, 184, 184);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+/*popup*/
+.overlay{
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.popup{
+	background: #38b494;
+	position: absolute;
+	height: 600px;
+	width: 800px;
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top:0;
+    font-size:30px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.hidden{
+    overflow: hidden;
+}	
+.the-skillshare h2{
+	font-size: 36px;
+	color: #000;
+}
+.the-skillshare{
+	padding: 20px;
+	width: 75%;
+	height: 600px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sign{
+	margin-top: 10px;
+	background: #00ff84;
+	width: 100px;
+	border-radius: 10px;
+	height: 8px;
+}
+.the-skillshare p{
+	font-size: 18px;
+	margin-top: 10px;
+	color: #000;
+    text-align: center;
+}
+.the-welcome{
+	display: flex;
+    align-items: center;
+}
+/* .google{
+	margin-left: 20px;
+} */
+.continue li{
+	border: 2px solid #000;
+	margin-top: 25px;
+	width: 100%;
+	border-radius: 10px;
+	padding: 12px 40px;
+}
+.continue a{
+	padding: 0px ;
+	font-size: 20px;
+	color: #001b2b;
+	display: flex;
+	align-items: center;
+}
+.continue a img{
+	margin-right: 20px;
+}
+.or-sec{
+	position: relative;
+	margin-top: 30px;
+}
+.line-or-sec{
+    background: #000;
+    width: 87%;
+    height: 1px;
+    margin-left: 39px;
+}
+.span{
+	margin-top: -12px;
+	background: #fff;
+	padding: 0 10px;
+	font-size: 20px;
+	position: absolute;
+	top: 0;
+	left: 43%;
+}
+.the-input{
+	margin-top: 30px;
+}
+.the-input li{
+	margin-bottom: 10px;
+}
+.the-input input{
+	font-size: 16px;
+	padding: 12px 10px 12px 18px;
+	width: 100%;
+    background: #eef5f3;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+.the-input input::placeholder{
+	color: #000;
+}
+
+.the-logo img{
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+.the-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.the-icon li{
+    margin: 5px;
+    cursor: pointer;
+}
+.bi-facebook{
+    background: #48556e;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50px;
+}
+.bi-google{
+    background: #df4d3a;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50px;
+}
+.bi-linkedin{
+    background: #47546d;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 50px;
+}
+.simply-dummy button{
+	background: #28b498;
+	font-size: 20px;
+	color: #fff;
+	margin-top: 10px;
+	width: 70%;
+	padding: 10px;
+	border-radius: 50px;
+	border: none;
+	margin-left: 61px;
+}
+.chckbox span{
+	font-size: 20px;
+	color: #2a06d0;
+	margin-top: 20px;
+}
+.the-member{
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+.chckbox button{
+	background: #fff;
+	font-size: 20px;
+	color: #000;
+    margin-left: 45px;
+	/* width: 100%; */
+	padding: 12px 60px;
+	border-radius: 50px;
+	border: none;
+}
+.New-Here h2{
+    /* margin-left: 59px; */
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+.New-Here p{
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (min-width:393px) and (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+    .herosection{
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+    .herosection h2 {
+        color: white;
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .herosection h5{
+        color: white;
+        font-family: 'EB Garamond', serif;
+        font-weight: normal;
+
+    }
+    .collapse:not(.show){
+        display: block;
+    }
+    .collapse:not(.show){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* .inner img{
+        height: 50px;
+        width: 50px;
+    } */
+    .button_text{
+        padding: 5px 10px;
+    }
+    .roast{
+        display: inline-block;
+        position: relative;
+        top: 4rem;
+        left: -3rem;
+        color: white;
+        text-align: end;
+        line-height: 1;
+        border: 1px solid transparent;
+        /* font-size: 5px; */
+    }
+    .roast h6 {
+        font-size: 12px;
+    }
+    .roast p {
+        font-size: 10px;
+    }
+    .roast span{
+        color: grey;
+        display: none;
+    }
+    .dark_roast{
+        color: grey;
+        display: inline-block;
+        position: relative;
+        top: 4rem;
+        left: 7rem;
+    
+    }
+    .light_roast{
+        color: grey;
+        display: inline-block;
+        position: relative;
+        top: 17rem;
+        left: 2rem;
+    }
+    .decafinated{
+        color: grey;
+        display: inline-block;
+        position: relative;
+        top: 15rem;
+        left: -8rem ;
+    }
+    /*popup*/
+    .the-welcome{
+        flex-direction: column;
+        width: 100%;
+    }
+    .the-skillshare{
+        width: 412px;
+    }
+    .popup{
+        background: none;
+        height: 490px;
+        width: 100%;
+    }
+    .google{
+        background: #38b494;
+    }
+}
